@@ -78,7 +78,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'ltmpools.wsgi.application'
+WSGI_APPLICATION = 'ltmpools.wsgi.app'
 
 
 # Database

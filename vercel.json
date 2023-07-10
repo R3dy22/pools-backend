@@ -1,14 +1,14 @@
 {
-    "builds": [
-      {
-        "src": "ltmpools/wsgi.py",
-        "use": "@vercel/python"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "ltmpools/wsgi.py"
-      }
-    ]
+  "builds": [
+    {
+      "src": "ltmpools/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "ltmpools/wsgi.py"
+    }
+  ]
 }
