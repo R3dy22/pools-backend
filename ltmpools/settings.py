@@ -26,11 +26,11 @@ SECRET_KEY = 'django-insecure-!fey-ep*j2hhu$0$1ajua2pf2r99cb$a((n7ki2#=n!6xz@ua$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app', '.now.sh']
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
-    'https://pools-frontend-mu.vercel.app/'
+    'https://pools-frontend-mu.vercel.app'
 ]
 
 # Application definition
@@ -85,10 +85,16 @@ WSGI_APPLICATION = 'ltmpools.wsgi.app'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgresql',
+        'ENGINE': 'django.db.backends.postgresql',
+        'URL': os.getenv('POSTGRES_URL'),
+        'NAME': os.getenv('PGNAME'),
+        'USER': os.getenv('PGUSER'),
+        'PASSWORD': os.getenv('POSTGRES_PASSWORD'),
+        'HOST': os.getenv('PGHOST'),
+        'PORT': os.getenv('PGPORT'),
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
