@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Pool{% endblock %}
+
+{% block content %}
+  <form action="" method="post">
+    
+  </form>
+  {{ pool.title }}
+  
+  <br>
+
+  {% for question in choices %}
+    {{question.choice_text}}
+  {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+.navbar {
+    flex-wrap:nowrap;
+    align-items:center;
+    border-bottom: 0.3rem solid black;
+}
+
+.navbar .logo {
+    flex-grow:1;
+    text-align:center;
+}
+
+.suggestion .btn {
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    font-size: 1.2rem;
+    border-radius: 10rem;
+    text-decoration: none;
+}
+
+.logo {
+    font-family: 'Yeseva One', cursive;
+    font-size: 2.7rem;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}

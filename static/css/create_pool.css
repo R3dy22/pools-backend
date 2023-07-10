@@ -1,0 +1,96 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.card {
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    min-width: 400px;
+    height: 450px;
+    background-color: #ffffff;
+    padding: 10px 30px;
+}
+
+.card h3{
+    font-size: 22px;
+    font-weight:500;
+}
+
+.drop_box{
+    height: 100%;
+    margin: 10px 0;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px dotted #a3a3a3;
+    border-radius: 5px;
+}
+
+.drop_box h4{
+    font-size: 16px;
+    font-weight:400; 
+    color:#2e2e2e;
+
+}
+
+.drop_box p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color:#a3a3a3;
+}
+
+.submit-button{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+}
+
+.submit-button:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+.finish {
+    font-weight: 700;
+}
+
+.form input {
+    margin: 10px 0;
+    width: 100%;
+    background-color: #e2e2e2;
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+}
+
+.form-control {
+    border-color: #d8d8d8;
+}
+
+#add-response {
+    border: 1px solid black;
+    height: 2.4rem;
+}
+
+#add-response:hover{
+    background-color: black;
+    color: white;
+    transition: .5s;
+}

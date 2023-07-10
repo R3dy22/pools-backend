@@ -1,0 +1,10 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/navbar.css' %}">
+<nav class="navbar navbar-expand-lg py-0">
+  <div class="container">
+    <div class="suggestion">
+      <a href="{% url 'poolsapp:create_pool' %}" class="btn">Propune ceva</a>
+    </div>
+    <div class="logo"><a href="{% url 'poolsapp:index' %}">CE</a></div>
+  </div>
+</nav>  
