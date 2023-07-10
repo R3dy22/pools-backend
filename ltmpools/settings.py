@@ -24,12 +24,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-!fey-ep*j2hhu$0$1ajua2pf2r99cb$a((n7ki2#=n!6xz@ua$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
+    'https://pools-frontend-mu.vercel.app/'
 ]
 
 # Application definition
@@ -85,8 +86,12 @@ WSGI_APPLICATION = 'ltmpools.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'URL': os.getenv('POSTGRES_URL'),
+        'USER': os.getenv('POSTGRES_USER'),
+        'PASSWORD': os.getenv('POSTGRES_PASSWORD'),
+        'HOST': os.getenv('POSTGRES_HOST'),
+        'DATABASE' : os.getenv('POSTGRES_DATABASE')
     }
 }
 
