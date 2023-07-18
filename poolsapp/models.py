@@ -6,6 +6,7 @@ class Pool(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     question = models.CharField(max_length=200, default='')
     end_date = models.DateTimeField()
+    image_url = models.CharField(default='', max_length=100)
 
     def __str__(self):
         return self.title

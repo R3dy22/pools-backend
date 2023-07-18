@@ -11,7 +11,7 @@ class PoolSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Pool
-        fields = ('id', 'title', 'description', 'end_date', 'question', 'questions')
+        fields = ('id', 'title', 'description', 'end_date', 'question', 'questions', 'image_url')
 
     def create(self, validated_data):
         questions_data = validated_data.pop('questions')
